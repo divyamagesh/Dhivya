@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  //fibonacci series  0 1 1 2 3 5 8 13
+                    //a b c
+                      //a b c
+  int a=0,b=1,n,c;
+  printf("enter the limit:");
+  scanf("%d",&n);
+  printf("%d\n%d",a,b);
+  c=a+b;
+  while(c<n)
+  {
+    printf("%d\n",c);
+    a=b;
+    b=c;
+    c=a+b;
+  }
+  getch();
+}
